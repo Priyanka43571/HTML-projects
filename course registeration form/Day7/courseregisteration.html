@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Course Registeration Form</title>
+  </head>
+  <body>
+    <h1>Course Registeration From</h1>
+     <fieldset>
+      <style>
+        fieldset {
+          border: 3px solid #000; /* darker + thicker */
+        }
+      </style>
+      <legend>Personal Detaiils</legend>
+      
+      
+      <form action="./server.html" autocomplete="on">
+
+    
+    <table>
+      <tr>
+        <td> <label for="fname"> First Name: </label></td>
+        <td> <input
+          name="fname"
+          id="fname"
+          type="text"
+          placeholder="Ex:priyanka"
+          required /></td>
+      </tr>
+
+      <tr>
+        <td> <label for="sname"> Sur Name: </label></td>
+        <td><input type="text" name="fname" id="fname" /></td>
+      </tr>
+
+      <tr>
+        <td><label for="MobileNumber">Mobile Number: </label></td>
+        <td><input
+          type="tel"
+          name="Mobile Number"
+          id="Mobile Number"
+          placeholder="Ex:2676735233"
+          maxlength="10"
+          required/></td>
+      </tr>
+
+      <tr>
+        <td> <label for="email"> Email: </label></td>
+        <td><input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="Ex:xyz@gmail.com"
+          required
+        /></td>
+      </tr>
+
+      <tr>
+        <td><label for="password"> password: </label></td>
+        <td><input
+          type="password"
+          name="password"
+          id="password"
+          required
+        /></td>
+      </tr>
+      <tr>
+        <td><label for="conformpassword"> Conform Password: </label></td>
+        <td><input
+          type="password"
+          name="Conform Password"
+          id="Conform Password"
+          required
+        /></td>
+      </tr>
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input
+          type="date"
+          name=" Date of Birth"
+          id="Date of Birth"
+        /></td>
+      </tr>
+      <tr>
+        <td><label for="Age"> Age: </label></td>
+        <td> <input
+          type="number"
+          name="Age"
+          id="Age"
+          min="18"
+          max="65"
+          required
+        /></td>
+      </tr>
+      <tr>
+        <td><label for="Gender"> Gender: </label></td>
+        <td><input
+          value="Female"
+          type="radio"
+          name="Gender"
+          id="Gender"
+          required
+        />
+      <label>Female</label>
+        <input value="male" type="radio" name="Gender" id="Gender" required />
+        <label> Male</label>
+        <input value="others" type="radio" name="Gender" id="Gender" required />
+        <label> others</label></td>
+      </tr>
+      <tr>
+        <td><label for="selcetion">Select Country</label></td>
+        <td> <select name=" country" id="country">
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="Germany">Germany</option>
+          <option value="Asia">Asia</option></select</td>
+      </tr>
+      <tr>
+        <td><label for="upload">Upload pic</label></td>
+        <td> <input type="file" name="upload" id="upload" /></td>
+      </tr>
+
+      <tr>
+        <td><input type="reset" /></td>
+        <td></td>
+      </tr>
+    </table>
+
+  
+
+   
+  
+      </form>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Details</legend>
+
+      <label>Select Course:</label>
+      <select>
+        <option>Java Full Stack Development</option>
+        <option>MERN STACK</option>
+        <option>Python for Datascience</option>
+        <option>Python Full Stack Development</option></select
+      ><br /><br />
+
+      <label>Delivery mode:</label>
+      <input type="radio" name="gender" /> Offline
+      <input type="radio" name="gender" /> online
+
+      <label>Comments:</label><br />
+      <textarea rows="5" cols="40"></textarea><br />
+
+     
+    </fieldset><br/>
+     <input type="submit" />
+    <br />
+  </body>
+</html>
